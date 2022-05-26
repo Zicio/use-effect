@@ -1,3 +1,7 @@
+[Ссылка на GP](https://zicio.github.io/use-effect/)
+
+[Ссылка на задание](https://github.com/Zicio/ra16-homeworks/tree/master/hooks-context/use-effect)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
