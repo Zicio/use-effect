@@ -1,0 +1,27 @@
+$border: 1px solid rgb(189, 188, 188);
+%parameter-type {
+  margin: 0;
+  border-bottom: $border;
+  padding: 10px 10px 10px 10px;
+}
+
+.info {
+  width: 300px;
+  border: $border;
+
+  .info__name {
+    @extend %parameter-type;
+    padding-bottom: 30px;
+    font-weight: normal;
+  }
+
+  .info__city,
+  .info__company {
+    @extend %parameter-type;
+  }
+
+  .info__position {
+    @extend %parameter-type;
+    border-bottom: 0;
+  }
+}

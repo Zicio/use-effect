@@ -1,16 +1,21 @@
-import { useEffect } from "react";
+import "./List.scss";
 
 const List = (props) => {
-  const { data, load, onClick } = props;
-
-  useEffect(() => {
-    load();
-  }, []);
+  const { data, onClick, active } = props;
 
   return (
     <ul className="list">
       {data.map((el) => (
-        <li key={el.id} className="list__item" id={el.id} onClick={onClick}>
+        <li
+          key={el.id}
+          className={
+            Number(el.id) === Number(active)
+              ? "list__item active"
+              : "list__item"
+          }
+          id={el.id}
+          onClick={onClick}
+        >
           {el.name}
         </li>
       ))}

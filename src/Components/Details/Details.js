@@ -1,16 +1,27 @@
-import { useEffect, useState } from "react";
-import fetchApi from "../../fetchApi";
+import "./Details.scss";
 
 const Details = (props) => {
-  const { info, load, description } = props;
+  const { data, load } = props;
 
-  useEffect(() => {
-    if (info) {
-      load();
-    }
-  }, [info]);
+  if (load) {
+    return (
+      <div className="app">
+        <progress />
+      </div>
+    );
+  }
 
-  return <div>{JSON.stringify(description)}</div>;
+  if (data) {
+    return (
+      <div className="info">
+        <img className="info__avatar" src={data.avatar} alt="Avatar" />
+        <h3 className="info__name">{data.name}</h3>
+        <p className="info__city">City: {data.details.city}</p>
+        <p className="info__company">Company: {data.details.company}</p>
+        <p className="info__position">Position: {data.details.position}</p>
+      </div>
+    );
+  }
 };
 
 export default Details;

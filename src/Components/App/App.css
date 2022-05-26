@@ -1,0 +1,7 @@
+.app {
+  margin: 40px 40px;
+  display: grid;
+  grid-template-columns: minmax(200px, 50%) auto;
+  grid-gap: 40px;
+  font-family: sans-serif;
+}
