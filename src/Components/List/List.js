@@ -1,11 +1,30 @@
 import "./List.scss";
+import { useState, useEffect } from "react";
+import fetchApi from "../../fetchApi";
+import PropTypes from "prop-types";
 
 const List = (props) => {
-  const { data, onClick, active } = props;
+  const { onClick, active } = props;
+
+  const [loadingList, setLoadingList] = useState(true);
+  const [usersList, setUsersList] = useState([]);
+
+  const loadList = async () => {
+    const response = await fetchApi("users");
+    const data = await response.json();
+    setLoadingList(false);
+    setUsersList(data);
+  };
+
+  useEffect(() => {
+    loadList();
+  }, []);
+
+  if (loadingList) return <progress className="list-progress" />;
 
   return (
     <ul className="list">
-      {data.map((el) => (
+      {usersList.map((el) => (
         <li
           key={el.id}
           className={
@@ -21,6 +40,11 @@ const List = (props) => {
       ))}
     </ul>
   );
+};
+
+List.propTypes = {
+  onClick: PropTypes.func.isRequired,
+  active: PropTypes.string.isRequired,
 };
 
 export default List;

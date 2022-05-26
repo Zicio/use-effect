@@ -1,3 +1,5 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/paa6m6mx5u5x1p8i?svg=true)](https://ci.appveyor.com/project/Zicio/use-effect)
+
 [Ссылка на GP](https://zicio.github.io/use-effect/)
 
 [Ссылка на задание](https://github.com/Zicio/ra16-homeworks/tree/master/hooks-context/use-effect)

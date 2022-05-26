@@ -20,3 +20,10 @@ $border: 1px solid rgb(189, 188, 188);
     color: white;
   }
 }
+
+.list-progress {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
