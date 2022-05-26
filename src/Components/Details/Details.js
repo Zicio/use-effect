@@ -21,6 +21,7 @@ const Details = (props) => {
       setLoadingDescription(true);
       loadInfo();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [info]);
 
   if (loadingDescription) {
