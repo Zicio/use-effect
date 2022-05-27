@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/use-effect/static/css/main.426944af.css",
+    "main.js": "/use-effect/static/js/main.5ac19883.js",
+    "static/js/787.7fba10c5.chunk.js": "/use-effect/static/js/787.7fba10c5.chunk.js",
+    "index.html": "/use-effect/index.html",
+    "main.426944af.css.map": "/use-effect/static/css/main.426944af.css.map",
+    "main.5ac19883.js.map": "/use-effect/static/js/main.5ac19883.js.map",
+    "787.7fba10c5.chunk.js.map": "/use-effect/static/js/787.7fba10c5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.426944af.css",
+    "static/js/main.5ac19883.js"
+  ]
+}
